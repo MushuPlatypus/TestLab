@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+  <button type="button">Share</button>
+  <div class="fb-like"
+       data-share="true"
+       data-width="450"
+       data-show-faces="true">
+  </div>
+  <script src="../js/jquery-1.11.2.min.js"></script>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '518564898161949',
+        xfbml: true,
+        version: 'v2.5'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) { return; }
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    
+    $(document).ready(function () {
+      $('button').click(function() {
+        var params = {
+
+          };
+        FB.ui({
+          method: 'share',
+          href: 'http://www.google.com/',
+          picture: 'http://static.adzerk.net/Advertisers/ca0f847878fc4be5bac353194231ef81.png',
+          title: 'My share',
+          caption: 'This is the caption',
+          description: 'Very interesting description'
+          // Nothing needs to happen here..
+        });
+      });
+    });
+  </script>
+</body>
+</html>

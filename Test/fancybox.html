@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title></title>
+  <link href="FancyBox/jquery.fancybox.css" rel="stylesheet" />
+</head>
+  <body>
+
+    <a class="fancybox fancybox.iframe" href="http://www2.simcorp.com/l/48862/2014-09-25/474p?width=350&height=550">Open 200x500</a>
+
+    <div id="test" style="display:none">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar, nulla eu interdum posuere, nisi mauris cursus nisi, nec faucibus nibh urna nec turpis.
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="FancyBox/jquery.fancybox.pack.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".fancybox").fancybox({
+          maxWidth: 800,
+          maxHeight: 600,
+          fitToView: false,
+          width: '70%',
+          height: '70%',
+          autoSize: false,
+          closeClick: false,
+          openEffect: 'none',
+          closeEffect: 'none',
+          beforeLoad: function () {
+            this.width = parseInt(this.href.match(/width=[0-9]+/i)[0].replace('width=', ''));
+            this.height = parseInt(this.href.match(/height=[0-9]+/i)[0].replace('height=', ''));
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

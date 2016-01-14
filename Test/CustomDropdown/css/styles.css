@@ -1,0 +1,40 @@
+﻿.custom-select-wrapper {
+  background: #bada55;
+  width: 300px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.nano {
+  background: #bba;
+  width: 500px;
+  height: 500px;
+}
+
+  .nano .nano-content {
+    padding: 0;
+  }
+
+  .nano .nano-pane {
+    background: #888;
+  }
+
+  .nano .nano-slider {
+    background: #111;
+
+  }
+
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  padding: 3px 10px;
+  cursor: default;
+}
+
+li:hover {
+  background: #bada55;
+}

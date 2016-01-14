@@ -1,0 +1,30 @@
+﻿//Font-size
+.font-size(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 10);
+  font-size: ~"@{pxValue}px";
+  font-size: ~"@{remValue}rem";
+}
+
+//Clear
+.clear() {
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.before(@dim) {
+  display: block;
+  content: "";
+  width: @dim;
+  height: @dim;
+  background-repeat: no-repeat;
+}

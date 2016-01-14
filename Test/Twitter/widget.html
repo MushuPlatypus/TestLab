@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title></title>
+  <link type="text/css" rel="stylesheet" href="http://platform.twitter.com/embed/timeline.a859548807e55557ddb88a1a9e94dd6f.default.css">
+  <link href="styles/twitter-default.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="Regions">
+    <div class="SpotRegion">
+      <div class="Spots">
+        <div class="twitter-spot">
+          <h2>Twitter</h2>
+          <div class="root timeline ltr customisable-border  twitter-timeline not-touch twitter-timeline-rendered var-chromeless var-borderless var-headerless var-footerless var-static var-narrow">
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/x-handlebars-template" id="tweet-template">
+    <li class="  h-entry tweet  with-expansion  customisable-border" data-tweet-id="{{id}}" data-rendered-tweet-id="{{id_str}}" data-scribe="component:tweet">
+      <div class="header">
+        <a class="u-url permalink customisable-highlight" href="https://twitter.com/{{user.screen_name}}/status/{{id_str}}" data-datetime="2015-02-12T14:51:32+0000" data-scribe="element:mini_timestamp"><time pubdate="" class="dt-updated" datetime="2015-02-12T14:51:32+0000" title="Time posted: 12 Feb 2015, 14:51:32 (UTC)" aria-label="Posted 19 hours ago">19<abbr title="hours">h</abbr></time></a>
+        <div class="h-card p-author" data-scribe="component:author">
+          <a class="u-url profile" href="https://twitter.com/{{user.screen_name}}" aria-label="{{user.name}} (screen name: {{user.screen_name}})" data-scribe="element:user_link">
+            <img class="u-photo avatar" alt="" src="{{user.profile_image_url}}" data-src-2x="https://pbs.twimg.com/profile_images/486043043909230593/5MgVaBrT_bigger.png" data-scribe="element:avatar">
+            <span class="full-name">
+              <span class="p-name customisable-highlight" data-scribe="element:name">{{user.name}}</span>
+            </span>
+            <span class="p-nickname" dir="ltr" data-scribe="element:screen_name">@<b>{{user.screen_name}}</b></span>
+
+          </a>
+        </div>
+
+      </div>
+      <div class="e-entry-content">
+        <p class="e-entry-title">{{text}}</p>
+
+
+        <div class="retweet-credit" data-scribe="component:retweet_credit">
+          <i class="ic-rt"></i>Retweeted by <a class="profile h-card" href="https://twitter.com/bobreiting" title="@bobreiting on Twitter" data-scribe="element:user_link">Bo Breiting</a>
+        </div>
+        {{#entities.media}}
+        <div class="inline-media" data-scribe="component:media_forward"><a class="photo-link  box-0" target="_blank" href="{{media_url}}" data-scribe="element:photo"><img class="autosized-media" alt="View image on Twitter" title="View image on Twitter" src="{{media_url}}" width="298" height="167"></a></div>
+        {{/entities.media}}
+      </div>
+
+      <div class="footer customisable-border" data-scribe="component:footer">
+        <span class="stats-narrow">
+          <span class="stats" data-scribe="component:stats">
+            <a href="https://twitter.com/{{user.screen_name}}/status/{{id_str}}" title="View Tweet on Twitter" data-scribe="element:retweet_count">
+              <span class="stats-retweets">
+                <strong>6</strong> Retweets
+              </span>
+            </a>
+            <a href="https://twitter.com/{{user.screen_name}}/status/{{id_str}}" title="View Tweet on Twitter" data-scribe="element:favorite_count">
+              <span class="stats-favorites">
+                <strong>1</strong> favorite
+              </span>
+            </a>
+          </span>
+        </span>
+
+        <a class="expand customisable-highlight" href="https://twitter.com/{{user.screen_name}}/status/{{id_str}}" data-toggled-text="Collapse" role="button" aria-expanded="false" data-scribe="element:show_details"><b>Expand</b></a>
+
+        <ul class="tweet-actions" role="menu" aria-label="Tweet actions" data-scribe="component:actions">
+          <li><a href="https://twitter.com/intent/tweet?in_reply_to={{id}}" class="reply-action web-intent" title="Reply" data-scribe="element:reply"><i class="ic-reply ic-mask"></i><b>Reply</b></a></li>
+          <li><a href="https://twitter.com/intent/retweet?tweet_id={{id}}" class="retweet-action web-intent" title="Retweet" data-scribe="element:retweet"><i class="ic-retweet ic-mask"></i><b>Retweet</b></a></li>
+          <li><a href="https://twitter.com/intent/favorite?tweet_id={{id}}" class="favorite-action web-intent" title="Favorite" data-scribe="element:favorite"><i class="ic-fav ic-mask"></i><b>Favorite</b></a></li>
+        </ul>
+        <span class="stats-wide">
+          <b>· </b><span class="stats" data-scribe="component:stats">
+            <a href="https://twitter.com/{{user.screen_name}}/status/{{id_str}}" title="View Tweet on Twitter" data-scribe="element:retweet_count">
+              <span class="stats-retweets">
+                <strong>6</strong> Retweets
+              </span>
+            </a>
+            <a href="https://twitter.com/{{user.screen_name}}/status/{{id_str}}" title="View Tweet on Twitter" data-scribe="element:favorite_count">
+              <span class="stats-favorites">
+                <strong>1</strong> favorite
+              </span>
+            </a>
+          </span>
+        </span>
+      </div>
+    </li>
+  </script>
+  <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
+  <script src="../js/jquery-1.11.2.min.js"></script>
+  <script src="../js/handlebars-v3.0.0.js"></script>
+  <script src="js/twitter.js"></script>
+
+</body>
+</html>

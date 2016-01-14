@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+  <link href="css/StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="prefetch">
+    <input class="typeahead" type="text" placeholder="Countries">
+  </div>
+  <script src="../js/jquery-1.11.2.min.js"></script>
+  <script src="js/typeahead.bundle.min.js"></script>
+  <script>
+    var countries = new Bloodhound({
+      datumTokenizer: Bloodhound.tokenizers.whitespace,
+      queryTokenizer: Bloodhound.tokenizers.whitespace,
+      // url points to a json file that contains an array of country names, see
+      // https://github.com/twitter/typeahead.js/blob/gh-pages/data/countries.json
+      prefetch: 'data/countries.json'
+    });
+
+    // passing in `null` for the `options` arguments will result in the default
+    // options being used
+    $('#prefetch .typeahead').typeahead(null, {
+      name: 'countries',
+      source: countries
+    }).bind('typeahead:select', function (ev, suggestion) {
+      console.log('Selection: ' + suggestion);
+    });
+  </script>
+</body>
+</html>

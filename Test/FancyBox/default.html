@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title></title>
+  <link href="jquery.fancybox.css" rel="stylesheet" />
+</head>
+<body>
+  <a class="fancybox" href="#" data-href="http://geekonthemove.com/ftp/palm.mp4">Klik</a>
+  <script src="../js/jquery-1.11.2.min.js"></script>
+  <script src="jquery.fancybox.js"></script>
+  <script>
+    /*
+===================================
+Pentia (PT) Namespace
+===================================
+*/
+    var PT = PT || {};
+    /*
+    ===================================
+    PT.Video
+    ===================================
+    */
+    PT.Video = {
+      /*
+      ===================================
+      Variables
+      ===================================
+      */
+      Variables: {
+
+      },
+      /*
+      ===================================
+      Setup
+      ===================================
+      */
+      Setup: function () {
+        jQuery('.fancybox').fancybox({
+          href: jQuery(this).data('href')
+        });
+      },
+      /*
+      ===================================
+      Error
+      ===================================
+      */
+      Error: function (elem) {
+
+      },
+      /*
+      ===================================
+      Reset
+      ===================================
+      */
+      Reset: function () {
+
+      }
+    };
+    /*
+    ===================================
+    Initialize
+    ===================================
+    */
+    jQuery(document).ready(function () {
+      if (!jQuery('body').hasClass('pageedit')) {
+        PT.Video.Setup();
+      }
+    });
+  </script>
+</body>
+</html>

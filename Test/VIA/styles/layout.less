@@ -1,0 +1,27 @@
+﻿@import "_includes/_include.less";
+
+body{ 
+  background-color:@grey-500;
+  color:@text-color;
+  font-family:via-regular, arial, sans-serif;
+}
+
+
+.container-full-width {
+  width:100%;
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  } 
+}
+
+/*.below-header{ 
+  padding-top:62px;
+}*/
+
+@media print{
+  .container-full-width {
+    padding-bottom:60px;
+  }
+}
+ 

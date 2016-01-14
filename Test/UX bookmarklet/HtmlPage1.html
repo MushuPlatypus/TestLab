@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title></title>
+  <script src="../js/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+  <div class="something">
+    <iframe width="300" height="300" src="http://www.dr.dk"></iframe>
+  </div>
+  <div class="somethingelse">
+    <object type="application/x-shockwave-flash" data="http://www.scandlines.dk/~/media/Scandlines/ScandlinesDk/Images/Frontpage-NEW/CampaignItems/scandlines_582x485_499.ashx" width="582" height="485" id="flashObject_48C930DA-3F16-498F-9920-28DD1D2A7DF5" style="visibility: visible;"><param name="menu" value="false"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="wmode" value="opaque"><param name="flashvars" value="xmlurl="></object>
+  </div>
+  <button class="hide" onclick="javascript:hide();">Hide</button>
+  <script>
+    function hide() {
+      var objects = jQuery('iframe, object');
+      if (jQuery('.ptIllegalObject').length === 0) {
+        for (var i = 0; i < objects.length; i++) {
+          var wrapper = jQuery('<div>');
+          var style = {
+            width: objects[i].width + 'px',
+            height: objects[i].height + 'px',
+            display: 'inline-block',
+            backgroundColor: 'hsl(2, 57%, 40%)',
+            backgroundImage: 'repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px)'
+          };
+          wrapper.css(style);
+          wrapper.addClass('ptIllegalObject');
+          jQuery(objects[i]).wrap(wrapper);
+        }
+      }
+      objects.toggle();
+    }
+  </script>
+</body>
+</html>

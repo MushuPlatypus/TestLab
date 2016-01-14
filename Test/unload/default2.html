@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+  <h1>Side 2</h1>
+  <a href="http://www.yahoo.com">Forlad site</a>
+  <div id="outerDivSurveyInvitation" style="visibility: hidden; height: 100%; width: 100%;
+                                   background-color: black; filter: alpha(opacity=70); moz-opacity: 0.7; opacity: 0.7;
+                                   z-index: 111110; position: absolute; top: 0; left: 0;">
+  </div>
+  <div id="divSurveyInvitation" name="divSurveyInvitation" style="z-index: 111111;
+  position: absolute; visibility: hidden;">
+    <div id="EnalyzerVAlignDiv">
+    </div>
+    <div id="EnalyzerWrapperDiv">
+      <div id="EnalyzerPopupDiv">
+        <div id="EnalyzerInnerDiv">
+          <form name="EnalyzerSurveyInvitationForm" action="#">
+            <input type="hidden" name="hdnSurveyUrl" value="" />
+            <div style="float: left; width: 100%;">
+              <img src="/images/Enalyzer/Enalyzer-Logo.png" class="EnalyzerLeft EnalyzerLinkImage" style="margin-top: 13px;
+            float: left;" />
+              <a class="EnalyzerRight" style="margin-right: -17px; margin-top: -5px;" href="#"
+                 onclick="enalyzerSurveyInvitation.Decline()">
+                <img src="/images/Enalyzer/Close-Button.png" class="EnalyzerLinkImage" />
+              </a>
+            </div>
+            <div class="EnalyzerText EnalyzerLeft" style="font-size: 23px; line-height: 25px;
+          width: 100%;">
+              Vi gennemfører i øjeblikket en<br />
+              brugerundersøgelse og vil gerne<br />
+              høre <span class="EnalyzerText" style="color: White; font-size: 23px; line-height: 25px">
+                din mening
+              </span> om www.kk.dk/job
+            </div>
+            <div class="EnalyzerText EnalyzerLeft" style="font-size: 12px; width: 100%; margin-top: 10px;">
+              Med dine svar kan du være med til at forme vores fremtidige udvikling af en ny jobportal.<br />
+              Undersøgelsen tager ca. <span class="EnalyzerText" style="color: White;
+            font-size: 12px;">5 min.</span> at gennemføre.
+            </div>
+            <div class="EnalyzerLeft" style="margin-top: 45px;">
+              <span class="EnalyzerText EnalyzerLeft" style="font-size: 10px; line-height: 11px;
+            padding-top: 5px;">
+                This survey is powered by Enalyzer A/S ®.<br />
+                Please visit <a style="color: #606372" href="www.enalyzer.dk"><b>our website</b></a>
+                for more info<br />
+                about RelationIntelligence and us.
+              </span>
+              <div class="EnalyzerRight" style="float: left; margin-left: 15px">
+                <a href="#" class="EnalyzerButton" onclick="enalyzerSurveyInvitation.Decline()">
+                  Nej,
+                  tak!
+                </a>
+              </div>
+              <div class="EnalyzerRight" style="float: left; margin-left: 19px">
+                <a href="#" class="EnalyzerButton" onclick="enalyzerSurveyInvitation.Accept()">
+                  Ja,
+                  tak!
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/jquery-1.11.2.min.js"></script>
+  <script src="js/EnalyzerPopupScript.js"></script>
+  <script type="text/javascript" language="javascript" defer="defer">
+  var enalyzerSurveyInvitation = new EnalyzerSurveyInvitation();
+  enalyzerSurveyInvitation.SurveyUrl = 'https://response.easyresearch.se/s.asp?WID=997042&Pwd=72242512&key=53872,5';
+  enalyzerSurveyInvitation.CookieSurveyRelatedIdentifier = 'okfakcspring2010';
+  enalyzerSurveyInvitation.SurveyOpenOnLeavingDomain = true;
+  enalyzerSurveyInvitation.SurveyWidth = '800';
+  enalyzerSurveyInvitation.SurveyHeight = '600';
+  function popupClose() {
+    document.getElementById("divSurveyInvitation").style.display = "none";
+  }
+  enalyzerSurveyInvitation.Execute();
+  </script>
+</body>
+</html>

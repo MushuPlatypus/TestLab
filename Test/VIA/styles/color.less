@@ -1,0 +1,188 @@
+﻿@import "_includes/_include.less";
+.grey-scale(@grey-theme);
+.theme(@default-theme);
+
+
+
+
+body.Gray {
+    .theme(@grey-theme);
+}
+
+body.Yellow {
+    .theme(@yellow-theme);
+}
+
+body.Orange,
+.pageedit.Salmon {
+    .theme(@orange-theme);
+}
+
+body.Red {
+    .theme(@red-theme);
+}
+
+body.Purple {
+    .theme(@purple-theme);
+}
+
+body.Blue {
+    .theme(@blue-theme);
+}
+
+body.Turquoise {
+    .theme(@turquoise-theme);
+}
+
+
+
+
+
+
+//Highlight elements above 10 in page edit mode
+.pageedit {
+    .module {
+        li {
+            .clear();
+        }
+
+        .linklist-item:nth-of-type(n+11),
+        .tab-group-item:nth-of-type(n+11),
+        .accordion-item:nth-of-type(n+11) {
+            display: block;
+            background-color: red;
+
+            a {
+                background-color: red;
+            }
+        }
+    }
+}
+
+
+
+.grey-scale(@color) {
+
+
+    .primary-navigation .level-1 >li,
+    .navigate-link,
+    .social-module > div,
+    .education-location-module li
+    /*,.education-list > div*/ {
+        background-color: @color;
+        .generate-children('bg',@color,10,1,8,1.1);
+        /*
+      http://lea.verou.me/2011/01/styling-children-based-on-their-number-with-css3/
+    */
+        /* two items  */
+        &:first-child:nth-last-child(2),
+        &:first-child:nth-last-child(2) ~ li,
+        &:first-child:nth-last-child(2) ~ div {
+            .generate-children('bg',@color,2,1,2.5,1.5);
+            
+        }
+        /* three items  */
+        &:first-child:nth-last-child(3),
+        &:first-child:nth-last-child(3) ~ li,
+        &:first-child:nth-last-child(3) ~ div {
+            .generate-children('bg',@color,3,1,4);
+        }
+        /* four items  */
+        &:first-child:nth-last-child(4),
+        &:first-child:nth-last-child(4) ~ li,
+        &:first-child:nth-last-child(4) ~ div {
+            .generate-children('bg',@color,4,1,4,1.3);
+        }
+        /* five items  */
+        &:first-child:nth-last-child(5),
+        &:first-child:nth-last-child(5) ~ li,
+        &:first-child:nth-last-child(5) ~ div {
+            .generate-children('bg',@color,5,1,5,1.3);
+        }
+
+        &:hover {
+            background: rgba(red(@color), green(@color), blue(@color), .4) !important;
+        }
+    }
+
+    
+    .vok-list, .tmh-list > div {
+        
+        &:nth-child(even){
+            background: @grey-300;
+            border-bottom: solid 1px @grey-400;
+        } 
+
+        &:nth-child(odd){
+            background: @grey-400;
+            border-bottom: solid 1px @grey-300;
+        } 
+
+        &:hover {
+            background: rgba(red(@color), green(@color), blue(@color), .4) !important;
+        }
+    }
+}
+
+.theme(@color) {
+    .useTheme,
+    .primary-navigation .level-1 li.active a,
+    .image-module.useTheme:before,
+    .tab-group .title.open,
+    .scfForm input[type='submit'],
+    .slides-pagination a.current,   
+    .vok-module .vok-tab-group .title.open, 
+    .campaign-module .container .read-more-link a {
+        background-color: @color;
+    }
+    /*.module-item.useTheme.regular,
+    .module-item.useTheme.reverse,
+    .module-item.useTheme.small,
+    .image-module.useTheme:before,*/
+    .related-module-title > div,
+    .vok-module .select-filter li,
+    .accordion-item,
+    .tab-group-item,
+    .linklist li {
+        background-color: @color;
+        .generate-children('bg',@color,10,1,10,1.1);
+        /*
+      http://lea.verou.me/2011/01/styling-children-based-on-their-number-with-css3/
+    */
+        /* two items  */
+        &:first-child:nth-last-child(2),
+        &:first-child:nth-last-child(2) ~ li,
+        &:first-child:nth-last-child(2) ~ div {
+            .generate-children('bg',@color,2,1,2.5,1.5);
+        }
+        /* three items  */
+        &:first-child:nth-last-child(3),
+        &:first-child:nth-last-child(3) ~ li,
+        &:first-child:nth-last-child(3) ~ div {
+            .generate-children('bg',@color,3,1,4);
+        }
+        /* four items  */
+        &:first-child:nth-last-child(4),
+        &:first-child:nth-last-child(4) ~ li,
+        &:first-child:nth-last-child(4) ~ div {
+            .generate-children('bg',@color,4,1,4,1.3);
+        }
+        /* five items  */
+        &:first-child:nth-last-child(5),
+        &:first-child:nth-last-child(5) ~ li,
+        &:first-child:nth-last-child(5) ~ div {
+            .generate-children('bg',@color,5,1,5,1.3);
+        }
+        
+    }
+
+
+
+        .accordion-item:not(.open),
+        .tab-group-item,
+        .linklist li {
+            &:hover {
+                background: rgba(red(@color), green(@color), blue(@color), .1) !important;
+            }
+        }
+}

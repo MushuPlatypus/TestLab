@@ -1,0 +1,27 @@
+﻿.paper {
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .paper {
+    /*width: 220px;
+    height: 220px;*/
+  }
+}
+@media (min-width: 992px) {
+  .paper {
+    /*width: 213px;
+    height: 2123px;*/
+  }
+}
+@media (min-width: 1200px) {
+  .paper {
+    /*width: 135px;
+    height: 135px;*/
+  }
+}
+.paper img {
+  width: 100%;
+}
+.hidesome {
+  overflow: hidden;
+}

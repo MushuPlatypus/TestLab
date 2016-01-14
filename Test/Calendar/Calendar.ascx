@@ -1,0 +1,20 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Calendar.ascx.cs" Inherits="Tester.Calendar.Calendar" %>
+ <asp:Calendar ID="Calendar1"
+         runat="server"
+         Font-Names="verdana"           
+         Font-Size="10pt"
+         BorderColor="#CCCCCC"
+         ShowGridLines="true"
+         NextPrevStyle-Font-Size="14pt"
+         NextPrevStyle-ForeColor="#FFFFFF"
+         DayHeaderStyle-BackColor="#E5E5E5"
+         DayHeaderStyle-ForeColor="#000000"
+         TitleStyle-Height="30px"         
+         TitleStyle-BackColor="#0088BB"
+         TitleStyle-Font-Size="18px"
+         TitleStyle-ForeColor="#FFFFFF"
+         TodayDayStyle-BackColor="Yellow"
+         TodayDayStyle-ForeColor="Red"
+         TodayDayStyle-Font-Bold="true"
+         TodayDayStyle-Font-Size="14px">
+     </asp:Calendar>

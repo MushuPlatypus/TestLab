@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <form action="/" method="POST" id="myform">
+        <select id="inpSelect" name="inpSelect" required>
+            <option value="">Vælg noget</option>
+            <option value="1">1</option>
+        </select>
+        <br/>
+        <textarea id="txtarea" name="txtarea" required></textarea>
+        <input type="submit" value="Submit"/>
+    </form>
+    <script src="../js/jquery-1.11.2.min.js"></script>
+    <script src="../js/validation/jquery.validate.js"></script>
+    <script>
+        $("#myform").validate({
+            debug: true
+        });
+    </script>
+</body>
+</html>
