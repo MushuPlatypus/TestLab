@@ -66,7 +66,320 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bootstrap-3.3.4-dist\css\bootstrap-theme.css" />
+    <Content Include="bootstrap-3.3.4-dist\css\bootstrap-theme.min.css" />
+    <Content Include="bootstrap-3.3.4-dist\css\bootstrap.css" />
+    <Content Include="bootstrap-3.3.4-dist\css\bootstrap.min.css" />
+    <Content Include="bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap-3.3.4-dist\js\bootstrap.js" />
+    <Content Include="bootstrap-3.3.4-dist\js\bootstrap.min.js" />
+    <Content Include="bootstrap-3.3.4-dist\js\npm.js" />
+    <Content Include="Calendar\Calendar.ascx" />
+    <Content Include="Calendar\clndr.js" />
+    <Content Include="Calendar\Default.aspx" />
+    <Content Include="CustomDropdown\css\nanoscroller.css" />
+    <Content Include="CustomDropdown\css\styles.css" />
+    <Content Include="CustomDropdown\default.html" />
+    <Content Include="CustomDropdown\js\custom-dropdown.js" />
+    <Content Include="CustomDropdown\js\jquery.nanoscroller.js" />
+    <Content Include="facebook\default.html" />
+    <Content Include="fancybox.html" />
+    <Content Include="FancyBox\blank.gif" />
+    <Content Include="FancyBox\default.html" />
+    <Content Include="FancyBox\fancybox_loading%402x.gif" />
+    <Content Include="FancyBox\fancybox_loading.gif" />
+    <Content Include="FancyBox\fancybox_overlay.png" />
+    <Content Include="FancyBox\fancybox_sprite%402x.png" />
+    <Content Include="FancyBox\fancybox_sprite.png" />
+    <Content Include="FancyBox\helpers\fancybox_buttons.png" />
+    <Content Include="FancyBox\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="FancyBox\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="FancyBox\helpers\jquery.fancybox-media.js" />
+    <Content Include="FancyBox\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="FancyBox\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="FancyBox\jquery.fancybox.css" />
+    <Content Include="FancyBox\jquery.fancybox.js" />
+    <Content Include="FancyBox\jquery.fancybox.pack.js" />
+    <Content Include="Grid\css\styles.css" />
+    <Content Include="Grid\css\styles.min.css" />
+    <Content Include="Grid\js\hide.js" />
+    <Content Include="Grid\js\jRespond-breakpoints.js" />
+    <Content Include="Grid\test.html" />
+    <Content Include="instagram\default.html" />
+    <Content Include="instagram\instafeed.min.js" />
+    <Content Include="js\handlebars-v3.0.0.js" />
+    <Content Include="js\jquery-1.11.2.min.js" />
+    <Content Include="js\jquery.ba-throttle-debounce.min.js" />
+    <Content Include="js\jRespond.js" />
+    <Content Include="js\mustache.js" />
+    <Content Include="js\utils.js" />
+    <Content Include="js\validation\additional-methods.js" />
+    <Content Include="js\validation\additional-methods.min.js" />
+    <Content Include="js\validation\jquery.validate.js" />
+    <Content Include="js\validation\jquery.validate.min.js" />
+    <Content Include="js\validation\localization\messages_ar.js" />
+    <Content Include="js\validation\localization\messages_ar.min.js" />
+    <Content Include="js\validation\localization\messages_bg.js" />
+    <Content Include="js\validation\localization\messages_bg.min.js" />
+    <Content Include="js\validation\localization\messages_bn_BD.js" />
+    <Content Include="js\validation\localization\messages_bn_BD.min.js" />
+    <Content Include="js\validation\localization\messages_ca.js" />
+    <Content Include="js\validation\localization\messages_ca.min.js" />
+    <Content Include="js\validation\localization\messages_cs.js" />
+    <Content Include="js\validation\localization\messages_cs.min.js" />
+    <Content Include="js\validation\localization\messages_da.js" />
+    <Content Include="js\validation\localization\messages_da.min.js" />
+    <Content Include="js\validation\localization\messages_de.js" />
+    <Content Include="js\validation\localization\messages_de.min.js" />
+    <Content Include="js\validation\localization\messages_el.js" />
+    <Content Include="js\validation\localization\messages_el.min.js" />
+    <Content Include="js\validation\localization\messages_es.js" />
+    <Content Include="js\validation\localization\messages_es.min.js" />
+    <Content Include="js\validation\localization\messages_es_AR.js" />
+    <Content Include="js\validation\localization\messages_es_AR.min.js" />
+    <Content Include="js\validation\localization\messages_es_PE.js" />
+    <Content Include="js\validation\localization\messages_es_PE.min.js" />
+    <Content Include="js\validation\localization\messages_et.js" />
+    <Content Include="js\validation\localization\messages_et.min.js" />
+    <Content Include="js\validation\localization\messages_eu.js" />
+    <Content Include="js\validation\localization\messages_eu.min.js" />
+    <Content Include="js\validation\localization\messages_fa.js" />
+    <Content Include="js\validation\localization\messages_fa.min.js" />
+    <Content Include="js\validation\localization\messages_fi.js" />
+    <Content Include="js\validation\localization\messages_fi.min.js" />
+    <Content Include="js\validation\localization\messages_fr.js" />
+    <Content Include="js\validation\localization\messages_fr.min.js" />
+    <Content Include="js\validation\localization\messages_ge.js" />
+    <Content Include="js\validation\localization\messages_ge.min.js" />
+    <Content Include="js\validation\localization\messages_gl.js" />
+    <Content Include="js\validation\localization\messages_gl.min.js" />
+    <Content Include="js\validation\localization\messages_he.js" />
+    <Content Include="js\validation\localization\messages_he.min.js" />
+    <Content Include="js\validation\localization\messages_hr.js" />
+    <Content Include="js\validation\localization\messages_hr.min.js" />
+    <Content Include="js\validation\localization\messages_hu.js" />
+    <Content Include="js\validation\localization\messages_hu.min.js" />
+    <Content Include="js\validation\localization\messages_hy_AM.js" />
+    <Content Include="js\validation\localization\messages_hy_AM.min.js" />
+    <Content Include="js\validation\localization\messages_id.js" />
+    <Content Include="js\validation\localization\messages_id.min.js" />
+    <Content Include="js\validation\localization\messages_is.js" />
+    <Content Include="js\validation\localization\messages_is.min.js" />
+    <Content Include="js\validation\localization\messages_it.js" />
+    <Content Include="js\validation\localization\messages_it.min.js" />
+    <Content Include="js\validation\localization\messages_ja.js" />
+    <Content Include="js\validation\localization\messages_ja.min.js" />
+    <Content Include="js\validation\localization\messages_ka.js" />
+    <Content Include="js\validation\localization\messages_ka.min.js" />
+    <Content Include="js\validation\localization\messages_kk.js" />
+    <Content Include="js\validation\localization\messages_kk.min.js" />
+    <Content Include="js\validation\localization\messages_ko.js" />
+    <Content Include="js\validation\localization\messages_ko.min.js" />
+    <Content Include="js\validation\localization\messages_lt.js" />
+    <Content Include="js\validation\localization\messages_lt.min.js" />
+    <Content Include="js\validation\localization\messages_lv.js" />
+    <Content Include="js\validation\localization\messages_lv.min.js" />
+    <Content Include="js\validation\localization\messages_my.js" />
+    <Content Include="js\validation\localization\messages_my.min.js" />
+    <Content Include="js\validation\localization\messages_nl.js" />
+    <Content Include="js\validation\localization\messages_nl.min.js" />
+    <Content Include="js\validation\localization\messages_no.js" />
+    <Content Include="js\validation\localization\messages_no.min.js" />
+    <Content Include="js\validation\localization\messages_pl.js" />
+    <Content Include="js\validation\localization\messages_pl.min.js" />
+    <Content Include="js\validation\localization\messages_pt_BR.js" />
+    <Content Include="js\validation\localization\messages_pt_BR.min.js" />
+    <Content Include="js\validation\localization\messages_pt_PT.js" />
+    <Content Include="js\validation\localization\messages_pt_PT.min.js" />
+    <Content Include="js\validation\localization\messages_ro.js" />
+    <Content Include="js\validation\localization\messages_ro.min.js" />
+    <Content Include="js\validation\localization\messages_ru.js" />
+    <Content Include="js\validation\localization\messages_ru.min.js" />
+    <Content Include="js\validation\localization\messages_si.js" />
+    <Content Include="js\validation\localization\messages_si.min.js" />
+    <Content Include="js\validation\localization\messages_sk.js" />
+    <Content Include="js\validation\localization\messages_sk.min.js" />
+    <Content Include="js\validation\localization\messages_sl.js" />
+    <Content Include="js\validation\localization\messages_sl.min.js" />
+    <Content Include="js\validation\localization\messages_sr.js" />
+    <Content Include="js\validation\localization\messages_sr.min.js" />
+    <Content Include="js\validation\localization\messages_sr_lat.js" />
+    <Content Include="js\validation\localization\messages_sr_lat.min.js" />
+    <Content Include="js\validation\localization\messages_sv.js" />
+    <Content Include="js\validation\localization\messages_sv.min.js" />
+    <Content Include="js\validation\localization\messages_th.js" />
+    <Content Include="js\validation\localization\messages_th.min.js" />
+    <Content Include="js\validation\localization\messages_tj.js" />
+    <Content Include="js\validation\localization\messages_tj.min.js" />
+    <Content Include="js\validation\localization\messages_tr.js" />
+    <Content Include="js\validation\localization\messages_tr.min.js" />
+    <Content Include="js\validation\localization\messages_uk.js" />
+    <Content Include="js\validation\localization\messages_uk.min.js" />
+    <Content Include="js\validation\localization\messages_vi.js" />
+    <Content Include="js\validation\localization\messages_vi.min.js" />
+    <Content Include="js\validation\localization\messages_zh.js" />
+    <Content Include="js\validation\localization\messages_zh.min.js" />
+    <Content Include="js\validation\localization\messages_zh_TW.js" />
+    <Content Include="js\validation\localization\messages_zh_TW.min.js" />
+    <Content Include="js\validation\localization\methods_de.js" />
+    <Content Include="js\validation\localization\methods_de.min.js" />
+    <Content Include="js\validation\localization\methods_es_CL.js" />
+    <Content Include="js\validation\localization\methods_es_CL.min.js" />
+    <Content Include="js\validation\localization\methods_fi.js" />
+    <Content Include="js\validation\localization\methods_fi.min.js" />
+    <Content Include="js\validation\localization\methods_nl.js" />
+    <Content Include="js\validation\localization\methods_nl.min.js" />
+    <Content Include="js\validation\localization\methods_pt.js" />
+    <Content Include="js\validation\localization\methods_pt.min.js" />
+    <Content Include="lazyload\default.html" />
+    <Content Include="lazyload\img\lg_placeimg_945_320_nature.jpg" />
+    <Content Include="lazyload\img\lg_placeimg_945_320_nature_thn.jpg" />
+    <Content Include="lazyload\script\lazyloadimage.js" />
+    <Content Include="lazyload\script\StackBlur.js" />
+    <Content Include="masks\Henrik_Hoeegh.jpg" />
+    <Content Include="masks\mask.html" />
     <Content Include="packages.config" />
+    <Content Include="bootstrap-3.3.4-dist\css\bootstrap-theme.css.map" />
+    <Content Include="bootstrap-3.3.4-dist\css\bootstrap.css.map" />
+    <Content Include="bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="bootstrap-3.3.4-dist\js\bootstrap.min.js.map" />
+    <Content Include="Grid\css\styles.less" />
+    <Content Include="js\validation\additional-methods.min.js.map" />
+    <Content Include="js\validation\jquery.validate.min.js.map" />
+    <Content Include="js\validation\localization\messages_ar.min.js.map" />
+    <Content Include="js\validation\localization\messages_bg.min.js.map" />
+    <Content Include="js\validation\localization\messages_bn_BD.min.js.map" />
+    <Content Include="js\validation\localization\messages_ca.min.js.map" />
+    <Content Include="js\validation\localization\messages_cs.min.js.map" />
+    <Content Include="js\validation\localization\messages_da.min.js.map" />
+    <Content Include="js\validation\localization\messages_de.min.js.map" />
+    <Content Include="js\validation\localization\messages_el.min.js.map" />
+    <Content Include="js\validation\localization\messages_es.min.js.map" />
+    <Content Include="js\validation\localization\messages_es_AR.min.js.map" />
+    <Content Include="js\validation\localization\messages_es_PE.min.js.map" />
+    <Content Include="js\validation\localization\messages_et.min.js.map" />
+    <Content Include="js\validation\localization\messages_eu.min.js.map" />
+    <Content Include="js\validation\localization\messages_fa.min.js.map" />
+    <Content Include="js\validation\localization\messages_fi.min.js.map" />
+    <Content Include="js\validation\localization\messages_fr.min.js.map" />
+    <Content Include="js\validation\localization\messages_ge.min.js.map" />
+    <Content Include="js\validation\localization\messages_gl.min.js.map" />
+    <Content Include="js\validation\localization\messages_he.min.js.map" />
+    <Content Include="js\validation\localization\messages_hr.min.js.map" />
+    <Content Include="js\validation\localization\messages_hu.min.js.map" />
+    <Content Include="js\validation\localization\messages_hy_AM.min.js.map" />
+    <Content Include="js\validation\localization\messages_id.min.js.map" />
+    <Content Include="js\validation\localization\messages_is.min.js.map" />
+    <Content Include="js\validation\localization\messages_it.min.js.map" />
+    <Content Include="js\validation\localization\messages_ja.min.js.map" />
+    <Content Include="js\validation\localization\messages_ka.min.js.map" />
+    <Content Include="js\validation\localization\messages_kk.min.js.map" />
+    <Content Include="js\validation\localization\messages_ko.min.js.map" />
+    <Content Include="js\validation\localization\messages_lt.min.js.map" />
+    <Content Include="js\validation\localization\messages_lv.min.js.map" />
+    <Content Include="js\validation\localization\messages_my.min.js.map" />
+    <Content Include="js\validation\localization\messages_nl.min.js.map" />
+    <Content Include="js\validation\localization\messages_no.min.js.map" />
+    <Content Include="js\validation\localization\messages_pl.min.js.map" />
+    <Content Include="js\validation\localization\messages_pt_BR.min.js.map" />
+    <Content Include="js\validation\localization\messages_pt_PT.min.js.map" />
+    <Content Include="js\validation\localization\messages_ro.min.js.map" />
+    <Content Include="js\validation\localization\messages_ru.min.js.map" />
+    <Content Include="js\validation\localization\messages_si.min.js.map" />
+    <Content Include="js\validation\localization\messages_sk.min.js.map" />
+    <Content Include="js\validation\localization\messages_sl.min.js.map" />
+    <Content Include="js\validation\localization\messages_sr.min.js.map" />
+    <Content Include="js\validation\localization\messages_sr_lat.min.js.map" />
+    <Content Include="js\validation\localization\messages_sv.min.js.map" />
+    <Content Include="js\validation\localization\messages_th.min.js.map" />
+    <Content Include="js\validation\localization\messages_tj.min.js.map" />
+    <Content Include="js\validation\localization\messages_tr.min.js.map" />
+    <Content Include="js\validation\localization\messages_uk.min.js.map" />
+    <Content Include="js\validation\localization\messages_vi.min.js.map" />
+    <Content Include="js\validation\localization\messages_zh.min.js.map" />
+    <Content Include="js\validation\localization\messages_zh_TW.min.js.map" />
+    <Content Include="js\validation\localization\methods_de.min.js.map" />
+    <Content Include="js\validation\localization\methods_es_CL.min.js.map" />
+    <Content Include="js\validation\localization\methods_fi.min.js.map" />
+    <Content Include="js\validation\localization\methods_nl.min.js.map" />
+    <Content Include="js\validation\localization\methods_pt.min.js.map" />
+    <Content Include="lazyload\style\style.less" />
+    <Content Include="StateList\css\StyleSheet1.less" />
+    <Content Include="Twitter\js\twitterfeed.json" />
+    <Content Include="Twitter\styles\twitter-default.less" />
+    <Content Include="TypeAhead\data\countries.json" />
+    <Content Include="TypeAhead\data\post_1960.json" />
+    <Content Include="VIA\Fonts\VIA-Font\via_type_black-webfont.eot" />
+    <Content Include="VIA\Fonts\VIA-Font\via_type_black-webfont.ttf" />
+    <Content Include="VIA\Fonts\VIA-Font\via_type_black-webfont.woff" />
+    <Content Include="VIA\Fonts\VIA-Font\via_type_bold-webfont.eot" />
+    <Content Include="VIA\Fonts\VIA-Font\via_type_bold-webfont.ttf" />
+    <Content Include="VIA\Fonts\VIA-Font\via_type_bold-webfont.woff" />
+    <Content Include="VIA\Fonts\VIA-Font\via_type_light-webfont.eot" />
+    <Content Include="VIA\Fonts\VIA-Font\via_type_light-webfont.ttf" />
+    <Content Include="VIA\Fonts\VIA-Font\via_type_light-webfont.woff" />
+    <Content Include="VIA\Fonts\VIA-Font\via_type_regular-webfont.eot" />
+    <Content Include="VIA\Fonts\VIA-Font\via_type_regular-webfont.ttf" />
+    <Content Include="VIA\Fonts\VIA-Font\via_type_regular-webfont.woff" />
+    <Content Include="VIA\styles\bootstrap\bootstrap.less" />
+    <Content Include="VIA\styles\bootstrap\close.less" />
+    <Content Include="VIA\styles\bootstrap\component-animations.less" />
+    <Content Include="VIA\styles\bootstrap\forms.less" />
+    <Content Include="VIA\styles\bootstrap\grid.less" />
+    <Content Include="VIA\styles\bootstrap\mixins.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\alerts.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\background-variant.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\border-radius.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\buttons.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\center-block.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\clearfix.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\forms.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\gradients.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\grid-framework.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\grid.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\hide-text.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\image.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\labels.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\list-group.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\nav-divider.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\nav-vertical-align.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\opacity.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\pagination.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\panels.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\progress-bar.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\reset-filter.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\resize.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\responsive-visibility.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\size.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\tab-focus.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\table-row.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\text-emphasis.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\text-overflow.less" />
+    <Content Include="VIA\styles\bootstrap\mixins\vendor-prefixes.less" />
+    <Content Include="VIA\styles\bootstrap\modals.less" />
+    <Content Include="VIA\styles\bootstrap\normalize.less" />
+    <Content Include="VIA\styles\bootstrap\print.less" />
+    <Content Include="VIA\styles\bootstrap\responsive-embed.less" />
+    <Content Include="VIA\styles\bootstrap\responsive-utilities.less" />
+    <Content Include="VIA\styles\bootstrap\scaffolding.less" />
+    <Content Include="VIA\styles\bootstrap\tables.less" />
+    <Content Include="VIA\styles\bootstrap\type.less" />
+    <Content Include="VIA\styles\bootstrap\utilities.less" />
+    <Content Include="VIA\styles\bootstrap\variables.less" />
+    <Content Include="VIA\styles\color.less" />
+    <Content Include="VIA\styles\compiled.less" />
+    <Content Include="VIA\styles\form-wizard.less" />
+    <Content Include="VIA\styles\icons.less" />
+    <Content Include="VIA\styles\layout.less" />
+    <Content Include="VIA\styles\typography.less" />
+    <Content Include="VIA\styles\_includes\_fonts.less" />
+    <Content Include="VIA\styles\_includes\_include.less" />
+    <Content Include="VIA\styles\_includes\_mixins.less" />
+    <Content Include="VIA\styles\_includes\_variables.less" />
+    <Content Include="VIA\styles\_mixins.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -75,10 +388,98 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="StateList\css\StyleSheet1.css" />
+    <Content Include="StateList\css\StyleSheet1.min.css" />
+    <Content Include="StateList\default.html" />
+    <Content Include="Twitter\default.html" />
+    <Content Include="Twitter\js\twitter.js" />
+    <Content Include="Twitter\styles\twitter-default.css" />
+    <Content Include="Twitter\styles\twitter-default.min.css" />
+    <Content Include="Twitter\widget.html" />
+    <Content Include="TypeAhead\css\StyleSheet1.css" />
+    <Content Include="TypeAhead\default.html" />
+    <Content Include="TypeAhead\js\typeahead.bundle.min.js" />
+    <Content Include="unload\default1.html" />
+    <Content Include="unload\default2.html" />
+    <Content Include="unload\js\EnalyzerPopupScript.js" />
+    <Content Include="unload\js\formular.js" />
+    <Content Include="UX bookmarklet\HtmlPage1.html" />
+    <Content Include="Validation\default.html" />
+    <Content Include="VIA\Fonts\VIA-Font\via_type_black-webfont.svg" />
+    <Content Include="VIA\Fonts\VIA-Font\via_type_bold-webfont.svg" />
+    <Content Include="VIA\Fonts\VIA-Font\via_type_light-webfont.svg" />
+    <Content Include="VIA\Fonts\VIA-Font\via_type_regular-webfont.svg" />
+    <Content Include="VIA\icons\arrow-left-dark.png" />
+    <Content Include="VIA\icons\arrow-left.png" />
+    <Content Include="VIA\icons\arrow-right.png" />
+    <Content Include="VIA\icons\VIA_WEB_IKON_X_21x21.svg" />
+    <Content Include="VIA\scripts\bootstrap.file-input.js" />
+    <Content Include="VIA\scripts\form-wizard.js" />
+    <Content Include="VIA\scripts\jquery-1.11.2.min.js" />
+    <Content Include="VIA\styles\compiled.css" />
+    <Content Include="VIA\styles\compiled.min.css" />
+    <Content Include="VIA\WebForm1.aspx" />
+    <Content Include="VIA\WebForm2.aspx" />
+    <Content Include="VIA\WebForm2a.aspx" />
+    <Content Include="VIA\WebForm3.aspx" />
+    <Content Include="VIA\WebForm4.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calendar\Calendar.ascx.cs">
+      <DependentUpon>Calendar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calendar\Calendar.ascx.designer.cs">
+      <DependentUpon>Calendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calendar\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VIA\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VIA\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VIA\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VIA\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VIA\WebForm2a.aspx.cs">
+      <DependentUpon>WebForm2a.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VIA\WebForm2a.aspx.designer.cs">
+      <DependentUpon>WebForm2a.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VIA\WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VIA\WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VIA\WebForm4.aspx.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VIA\WebForm4.aspx.designer.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="OverlayOnSearch\" />
+    <Folder Include="Twitter\img\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
